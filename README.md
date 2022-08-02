@@ -1,0 +1,1 @@
+An admin dashboard designed for a specialist supplier in whiskey.
