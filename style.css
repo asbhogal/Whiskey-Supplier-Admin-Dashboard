@@ -43,11 +43,19 @@ nav {
 }
 
 nav .logo-image {
+    display: flex;
+    justify-content: center;
     min-width: 45px;
-    background-color: #1e1e1e;
 }
 
 nav .logo-image img {
     width: 40px;
     object-fit: cover;
+}
+
+nav .logo-name .logo_name {
+    margin-left: 14px;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text-color);
 }
