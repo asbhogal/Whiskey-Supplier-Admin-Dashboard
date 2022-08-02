@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #0e4bf1;
+    --panel-color: whitesmoke;
+    --text-color: black;
+    --black-light-color: #707070;
+    --border-color: #e6e5e5;
+    --toggle-color: #ddd;
+    --box1-color: #4da3ff;
+    --box2-color: #ffe6ac;
+    --box3-color: #e7d1fc;
+    --title-icon-color: whitesmoke;
+
+    --tran-03: all 0.3s ease-in;
+    --tran-05: all 0.5s ease-in;
+}

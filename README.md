@@ -1,1 +1,1 @@
-An admin dashboard designed for a specialist supplier in whiskey.
+An admin dashboard designed for a specialist supplier in whiskey. This has been coded using vanilla HTML5, CSS3 and JavaScript.
