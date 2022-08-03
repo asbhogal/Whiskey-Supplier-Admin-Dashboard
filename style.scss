@@ -1,4 +1,4 @@
-@import "partials/mixins", "partials/typography", "partials/globals", "partials/variables";
+@import 'partials/mixins', 'partials/typography', 'partials/globals', 'partials/variables';
 
 nav {
     position: fixed;
@@ -15,6 +15,12 @@ nav {
             width: 40px;
             object-fit: cover;
         }
+    }
+    .logo-name {
+        margin-left: 14px;
+        font-size: 22px;
+        font-weight: 600;
+        color: $text-color;
     }
 }
 

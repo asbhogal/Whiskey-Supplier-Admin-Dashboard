@@ -1,2 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"); /*====COLORS====*/
-/*=====TRANSITIONS====*//*# sourceMappingURL=style.css.map */
+/*=====TRANSITIONS====*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: darkgrey;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/*====COLORS====*/
+/*=====TRANSITIONS====*/
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: whitesmoke;
+}
+nav .logo-image {
+  display: flex;
+  justify-content: center;
+  min-width: 45px;
+}
+nav .logo-image img {
+  width: 40px;
+  object-fit: cover;
+}
+nav .logo-name {
+  margin-left: 14px;
+  font-size: 22px;
+  font-weight: 600;
+  color: black;
+}/*# sourceMappingURL=style.css.map */
