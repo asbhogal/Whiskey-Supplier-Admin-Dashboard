@@ -1,0 +1,20 @@
+@import "partials/mixins", "partials/typography", "partials/globals", "partials/variables";
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: $panel-color;
+    .logo-image {
+        display: flex;
+        justify-content: center;
+        min-width: 45px;
+        img {
+            width: 40px;
+            object-fit: cover;
+        }
+    }
+}
+
