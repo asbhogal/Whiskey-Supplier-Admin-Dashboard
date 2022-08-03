@@ -71,6 +71,10 @@ nav .menu-items li a i {
   justify-content: center;
   color: #222;
 }
+nav .menu-items .mode-toggle {
+  height: 50px;
+  min-width: 45px;
+}
 nav .menu-items ul.logout-mod {
   position: absolute;
   bottom: 0;
