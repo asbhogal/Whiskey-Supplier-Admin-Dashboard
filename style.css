@@ -59,3 +59,16 @@ nav .logo-name .logo_name {
     font-weight: 600;
     color: var(--text-color);
 }
+
+nav .menu-items {
+    background-color: red;
+    margin-top: 40px;
+    height: calc(100%; - 90px)
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-items li {
+    list-style: none;
+}
