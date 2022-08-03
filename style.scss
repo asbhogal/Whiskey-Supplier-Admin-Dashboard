@@ -23,6 +23,9 @@ nav {
         font-size: 22px;
         font-weight: 600;
         color: $text-color;
+        span {
+            padding-left: 10px;
+        }
     }
     .menu-items {
         margin-top: 40px;
@@ -55,14 +58,27 @@ nav {
                 }
             }
         }
+        .mode {
+            display: flex;
+            align-items: center;
+        }
         .mode-toggle {
+            position: absolute;
+            right: 30px;
             height: 50px;
             min-width: 45px;
             background-color: red;
+            .switch {
+                position: relative;
+                height: 22px;
+                width: 40px;
+                background-color: $toggle-color;
+            }
         }
         ul.logout-mod {
             position: absolute;
-            bottom: 0;
+            bottom: 15px;
+            width: 100%;
         }
     }
 }
