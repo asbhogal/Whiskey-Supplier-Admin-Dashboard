@@ -17,6 +17,7 @@ nav {
         }
     }
     .logo-name {
+        font-family: 'Roboto', sans-serif;
         display: flex;
         align-items: center;
         margin-left: 14px;
@@ -72,6 +73,13 @@ nav {
                 height: 22px;
                 width: 40px;
                 background-color: $toggle-color;
+                &before {
+                    content: "";
+                    position: absolute;
+                    height: 15px;
+                    width: 15px;
+                    background-color: $panel-color;
+                }
             }
         }
         ul.logout-mod {
