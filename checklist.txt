@@ -1,3 +1,0 @@
-  - switch to local font hosting before final commit
-  - use mixins where applicable
-  - use variables where applicable
