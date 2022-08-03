@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"); /*====COLORS====*/
-/*=====TRANSITIONS====*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -13,8 +12,6 @@ body {
   font-family: "Roboto Condensed", sans-serif;
 }
 
-/*====COLORS====*/
-/*=====TRANSITIONS====*/
 nav {
   position: fixed;
   top: 0;
@@ -37,4 +34,36 @@ nav .logo-name {
   font-size: 22px;
   font-weight: 600;
   color: black;
+}
+nav .menu-items {
+  margin-top: 40px;
+  margin-left: 15px;
+  /*height: calc(100% - 90px);*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+nav .menu-items li {
+  list-style-type: none;
+}
+nav .menu-items li a {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  text-decoration: none;
+}
+nav .menu-items li a .link-name {
+  color: #222;
+}
+nav .menu-items li a i {
+  min-width: 45px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #222;
+}
+nav .menu-items ul.logout-mod {
+  position: absolute;
+  bottom: 0;
 }/*# sourceMappingURL=style.css.map */
