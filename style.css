@@ -61,8 +61,8 @@ nav .logo-name .logo_name {
 }
 
 nav .menu-items {
-    background-color: red;
     margin-top: 40px;
+    margin-left: 15px;
     height: calc(100%; - 90px)
     display: flex;
     flex-direction: column;
@@ -70,5 +70,11 @@ nav .menu-items {
 }
 
 .menu-items li {
-    list-style: none;
+    list-style-type: none;
+}
+
+.menu-items li a {
+    display: flex;
+    height: 60px;
+    text-decoration: none;
 }
