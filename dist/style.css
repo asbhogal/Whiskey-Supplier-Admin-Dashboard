@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"); /*=== COLORS ===*/
-/*=== TRANSITIONS ===*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -13,8 +12,6 @@ body {
   font-family: "Roboto Condensed", sans-serif;
 }
 
-/*=== COLORS ===*/
-/*=== TRANSITIONS ===*/
 nav {
   position: fixed;
   top: 0;
@@ -74,6 +71,7 @@ nav .menu-items li a i {
 nav .menu-items .mode-toggle {
   height: 50px;
   min-width: 45px;
+  background-color: red;
 }
 nav .menu-items ul.logout-mod {
   position: absolute;
