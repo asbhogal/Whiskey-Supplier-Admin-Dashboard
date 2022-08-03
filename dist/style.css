@@ -85,6 +85,7 @@ nav .menu-items .mode-toggle {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 nav .menu-items .mode-toggle .switch {
   position: relative;
@@ -94,12 +95,16 @@ nav .menu-items .mode-toggle .switch {
   width: 40px;
   background-color: #ddd;
 }
-nav .menu-items .mode-toggle .switchbefore {
+nav .menu-items .mode-toggle .switch:before {
   content: "";
   position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
   height: 15px;
   width: 15px;
   background-color: whitesmoke;
+  border-radius: 50%;
 }
 nav .menu-items ul.logout-mod {
   position: absolute;

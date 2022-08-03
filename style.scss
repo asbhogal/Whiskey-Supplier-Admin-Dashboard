@@ -66,6 +66,7 @@ nav {
             height: 50px;
             min-width: 45px;
             @include flex-central-align;
+            cursor: pointer;
             .switch {
                 position: relative;
                 display: inline-block;
@@ -73,12 +74,16 @@ nav {
                 height: 22px;
                 width: 40px;
                 background-color: $toggle-color;
-                &before {
+                &:before {
                     content: "";
                     position: absolute;
+                    left: 5px;
+                    top: 50%;
+                    transform: translateY(-50%);
                     height: 15px;
                     width: 15px;
                     background-color: $panel-color;
+                    border-radius: 50%;
                 }
             }
         }
