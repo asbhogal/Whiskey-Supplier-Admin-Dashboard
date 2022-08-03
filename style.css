@@ -75,6 +75,9 @@ nav .menu-items {
 
 .menu-items li a {
     display: flex;
+    align-items: center;
     height: 60px;
     text-decoration: none;
 }
+
+.menu-items li a
