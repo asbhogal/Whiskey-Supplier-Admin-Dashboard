@@ -36,23 +36,28 @@ nav {
         justify-content: space-between;
         li {
             list-style-type: none;
+            transition: $transition-03;
             a {
                 display: flex;
                 align-items: center;
                 height: 50px;
                 text-decoration: none;
+                transition: $transition-03;
                 &:hover i,
                 &:hover .link-name {
                     color: $secondary-color;
+                    transition: $transition-03;
                 }
                 .link-name {
                     color: $black-light-color;
+                    transition: $transition-03;
                 }
                 i {
                     min-width: 45px;
                     height: 100%;
                     @include flex-central-align;
                     color: $black-light-color;
+                    transition: $transition-03;
                 }
             }
         }
