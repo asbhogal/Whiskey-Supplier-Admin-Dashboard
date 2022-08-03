@@ -17,6 +17,8 @@ nav {
         }
     }
     .logo-name {
+        display: flex;
+        align-items: center;
         margin-left: 14px;
         font-size: 22px;
         font-weight: 600;
@@ -36,6 +38,10 @@ nav {
                 align-items: center;
                 height: 50px;
                 text-decoration: none;
+                &:hover i,
+                &:hover .link-name {
+                    color: $secondary-color;
+                }
                 .link-name {
                     color: $black-light-color;
                 }
