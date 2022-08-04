@@ -22,9 +22,10 @@ body {
             .menu-items .logout-mod li a > span {
                 color: $dark-mode-text-color;
             }
-            .switch::before {
-                left: 20px;
-            }
+        }
+        .switch::before {
+            left: 20px !important;
+            transition: $transition-03;
         }
     }
 }
