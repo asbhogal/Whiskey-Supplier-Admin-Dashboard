@@ -6,7 +6,7 @@ nav {
     left: 0;
     height: 100%;
     width: 250px;
-    background-color: $panel-color;
+    background-color: $light-mode-panel-color;
     .logo-image {
         display: flex;
         justify-content: center;
@@ -23,7 +23,7 @@ nav {
         margin-left: 14px;
         font-size: 22px;
         font-weight: 600;
-        color: $text-color;
+        color: $light-mode-text-color;
         span {
             padding-left: 10px;
         }
@@ -45,18 +45,18 @@ nav {
                 transition: $transition-03;
                 &:hover i,
                 &:hover .link-name {
-                    color: $secondary-color;
+                    color: $light-mode-secondary-color;
                     transition: $transition-03;
                 }
                 .link-name {
-                    color: $black-light-color;
+                    color: $light-mode-black-light-color;
                     transition: $transition-03;
                 }
                 i {
                     min-width: 45px;
                     height: 100%;
                     @include flex-central-align;
-                    color: $black-light-color;
+                    color: $light-mode-black-light-color;
                     transition: $transition-03;
                 }
             }
@@ -78,7 +78,7 @@ nav {
                 border-radius: 25px;
                 height: 22px;
                 width: 40px;
-                background-color: $toggle-color;
+                background-color: $light-mode-toggle-color;
                 &:before {
                     content: "";
                     position: absolute;
@@ -87,7 +87,7 @@ nav {
                     transform: translateY(-50%);
                     height: 15px;
                     width: 15px;
-                    background-color: $panel-color;
+                    background-color: $light-mode-panel-color;
                     border-radius: 50%;
                 }
             }
