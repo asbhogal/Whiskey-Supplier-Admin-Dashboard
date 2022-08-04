@@ -1,4 +1,13 @@
 @import 'partials/mixins', 'partials/typography', 'partials/globals', 'partials/responsive', 'partials/variables';
+
+.dashboard {
+    position: relative;
+    left: 250px;
+    background-color: $light-mode-panel-color;
+    height: 100vh;
+    width: calc(100% - 250px);
+}
+
 nav {
     position: fixed;
     top: 0;

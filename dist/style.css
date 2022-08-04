@@ -45,6 +45,14 @@ body.dark .switch::before {
   background-color: #242526 !important;
 }
 
+.dashboard {
+  position: relative;
+  left: 250px;
+  background-color: whitesmoke;
+  height: 100vh;
+  width: calc(100% - 250px);
+}
+
 nav {
   position: fixed;
   top: 0;
