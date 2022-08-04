@@ -14,9 +14,18 @@ body {
   background-color: darkgrey;
   font-family: "Roboto Condensed", sans-serif;
 }
-
 body.dark {
-  background-color: black;
+  background-color: #3a3b3c;
+}
+body.dark nav {
+  background-color: #242526;
+}
+body.dark nav .logo-name,
+body.dark nav .menu-items ul.nav-links li a i,
+body.dark nav .menu-items ul.nav-links li a > span,
+body.dark nav .menu-items .logout-mod li a i,
+body.dark nav .menu-items .logout-mod li a > span {
+  color: #ccc;
 }
 
 nav {
@@ -67,7 +76,7 @@ nav .menu-items li a {
   transition: all 0.3s ease-in;
 }
 nav .menu-items li a:hover i, nav .menu-items li a:hover .link-name {
-  color: rgb(79, 56, 56);
+  color: #4f3838;
   transition: all 0.3s ease-in;
 }
 nav .menu-items li a .link-name {
@@ -77,11 +86,11 @@ nav .menu-items li a .link-name {
 nav .menu-items li a i {
   min-width: 45px;
   height: 100%;
+  color: #222;
+  transition: all 0.3s ease-in;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #222;
-  transition: all 0.3s ease-in;
 }
 nav .menu-items .mode {
   display: flex;

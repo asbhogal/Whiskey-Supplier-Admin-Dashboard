@@ -55,9 +55,9 @@ nav {
                 i {
                     min-width: 45px;
                     height: 100%;
-                    @include flex-central-align;
                     color: $light-mode-black-light-color;
                     transition: $transition-03;
+                    @include flex-central-align;
                 }
             }
         }

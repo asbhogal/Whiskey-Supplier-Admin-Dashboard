@@ -11,7 +11,17 @@ body {
     min-height: 100vh;
     background-color: $light-mode-primary-color;
     font-family: 'Roboto Condensed', sans-serif;
-    .dark {
+    &.dark {
         background-color: $dark-mode-primary-color;
+        nav {
+            background-color: $dark-mode-secondary-color;
+            .logo-name, 
+            .menu-items ul.nav-links li a i,
+            .menu-items ul.nav-links li a > span,
+            .menu-items .logout-mod li a i,
+            .menu-items .logout-mod li a > span {
+                color: $dark-mode-text-color;
+            }
+        }
     }
 }
