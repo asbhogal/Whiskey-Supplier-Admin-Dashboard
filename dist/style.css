@@ -49,8 +49,24 @@ body.dark .switch::before {
   position: relative;
   left: 250px;
   background-color: whitesmoke;
-  height: 100vh;
+  min-height: 100vh;
   width: calc(100% - 250px);
+  padding: 10px 14px;
+}
+.dashboard .top {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 250px;
+  padding: 10px 14px;
+  width: calc(100% - 250px);
+  background-color: whitesmoke;
+}
+.dashboard .top .sidebar-toggle {
+  font-size: 26px;
+  color: black;
+  cursor: pointer;
 }
 
 nav {

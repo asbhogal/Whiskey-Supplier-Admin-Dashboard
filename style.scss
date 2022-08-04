@@ -4,8 +4,24 @@
     position: relative;
     left: 250px;
     background-color: $light-mode-panel-color;
-    height: 100vh;
+    min-height: 100vh;
     width: calc(100% - 250px);
+    padding: 10px 14px;
+    .top {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        top: 0;
+        left: 250px;
+        padding: 10px 14px;
+        width: calc(100% - 250px);
+        background-color: $light-mode-panel-color;
+        .sidebar-toggle {
+            font-size: 26px;
+            color: $light-mode-text-color;
+            cursor: pointer;
+        }
+    }
 }
 
 nav {
