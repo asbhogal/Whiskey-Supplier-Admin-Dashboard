@@ -27,6 +27,9 @@ body.dark nav .menu-items .logout-mod li a i,
 body.dark nav .menu-items .logout-mod li a > span {
   color: #ccc;
 }
+body.dark nav .switch::before {
+  left: 20px;
+}
 
 nav {
   position: fixed;
