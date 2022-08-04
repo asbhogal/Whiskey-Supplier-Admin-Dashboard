@@ -15,17 +15,26 @@ body {
         background-color: $dark-mode-primary-color;
         nav {
             background-color: $dark-mode-secondary-color;
+            .logo-name {
+                font-weight: 200;
+            }
+            a:hover {
+                background-color: red;
+                
+            }
             .logo-name, 
             .menu-items ul.nav-links li a i,
             .menu-items ul.nav-links li a > span,
             .menu-items .logout-mod li a i,
             .menu-items .logout-mod li a > span {
                 color: $dark-mode-text-color;
+
             }
         }
         .switch::before {
             left: 20px !important;
             transition: $transition-03;
+            background-color: $dark-mode-secondary-color !important;
         }
     }
 }

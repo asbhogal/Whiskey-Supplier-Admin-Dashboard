@@ -11,6 +11,7 @@ nav {
         display: flex;
         justify-content: center;
         min-width: 45px;
+        padding-bottom: 10px;
         img {
             width: 40px;
             object-fit: cover;
@@ -19,8 +20,9 @@ nav {
     .logo-name {
         font-family: 'Roboto', sans-serif;
         display: flex;
+        flex-direction: column;
         align-items: center;
-        margin-left: 14px;
+        padding: 10px 30px;
         font-size: 22px;
         font-weight: 600;
         color: $light-mode-text-color;
