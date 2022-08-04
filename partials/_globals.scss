@@ -4,25 +4,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: $transition-03;
 }
 
 body {
     min-height: 100vh;
-    background-color: $primary-color;
+    background-color: $light-mode-primary-color;
     font-family: 'Roboto Condensed', sans-serif;
     .dark {
-        $primary-color: #3a3b3c;
-        $secondary-color: #4f3838;
-        $panel-color: whitesmoke;
-        $text-color: black;
-        $black-light-color: #222;
-        $border-color: #e6e5e5;
-        $toggle-color: #ddd;
-        $box1-color: #4da3ff;
-        $box2-color: #ffe6ac;
-        $box3-color: #e7d1fc;
-        $title-icon-color: whitesmoke;
-        $transition-03: all 0.3s ease-in;
-        $transition-05: all 0.5s ease-in;
+        background-color: $dark-mode-primary-color;
     }
 }

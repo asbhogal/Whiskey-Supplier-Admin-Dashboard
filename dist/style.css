@@ -6,12 +6,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.3s ease-in;
 }
 
 body {
   min-height: 100vh;
   background-color: darkgrey;
   font-family: "Roboto Condensed", sans-serif;
+}
+
+body.dark {
+  background-color: black;
 }
 
 nav {
@@ -52,18 +57,22 @@ nav .menu-items {
 }
 nav .menu-items li {
   list-style-type: none;
+  transition: all 0.3s ease-in;
 }
 nav .menu-items li a {
   display: flex;
   align-items: center;
   height: 50px;
   text-decoration: none;
+  transition: all 0.3s ease-in;
 }
 nav .menu-items li a:hover i, nav .menu-items li a:hover .link-name {
   color: rgb(79, 56, 56);
+  transition: all 0.3s ease-in;
 }
 nav .menu-items li a .link-name {
   color: #222;
+  transition: all 0.3s ease-in;
 }
 nav .menu-items li a i {
   min-width: 45px;
@@ -72,6 +81,7 @@ nav .menu-items li a i {
   align-items: center;
   justify-content: center;
   color: #222;
+  transition: all 0.3s ease-in;
 }
 nav .menu-items .mode {
   display: flex;
