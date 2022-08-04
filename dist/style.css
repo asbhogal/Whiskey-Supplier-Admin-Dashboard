@@ -7,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   transition: all 0.3s ease-in;
+  border-radius: 5px;
 }
 
 body {
@@ -23,8 +24,13 @@ body.dark nav {
 body.dark nav .logo-name {
   font-weight: 200;
 }
-body.dark nav a:hover {
-  background-color: red;
+body.dark nav .nav-links a:hover {
+  background-color: #3a3b3c;
+  border-radius: 5px;
+}
+body.dark nav .log-out-btn:hover {
+  border-radius: 5px;
+  background-color: #3a3b3c;
 }
 body.dark nav .logo-name,
 body.dark nav .menu-items ul.nav-links li a i,
@@ -46,6 +52,13 @@ nav {
   height: 100%;
   width: 250px;
   background-color: whitesmoke;
+}
+nav .nav-links li:hover {
+  background-color: #3a3b3c;
+  border-radius: 5px;
+}
+nav .log-out-btn {
+  margin-right: 30px;
 }
 nav .logo-image {
   display: flex;
@@ -71,8 +84,7 @@ nav .logo-name span {
   padding-left: 10px;
 }
 nav .menu-items {
-  margin-top: 40px;
-  margin-left: 15px;
+  margin: 40px 15px 0 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -89,7 +101,7 @@ nav .menu-items li a {
   transition: all 0.3s ease-in;
 }
 nav .menu-items li a:hover i, nav .menu-items li a:hover .link-name {
-  color: #4f3838;
+  color: #ddd;
   transition: all 0.3s ease-in;
 }
 nav .menu-items li a .link-name {

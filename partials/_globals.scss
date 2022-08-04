@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     transition: $transition-03;
+    border-radius: 5px;
 }
 
 body {
@@ -18,9 +19,13 @@ body {
             .logo-name {
                 font-weight: 200;
             }
-            a:hover {
-                background-color: red;
-                
+            .nav-links a:hover {
+                background-color: $dark-mode-primary-color;
+                border-radius: 5px;
+            }
+            .log-out-btn:hover {
+                border-radius: 5px;
+                background-color: $dark-mode-primary-color;
             }
             .logo-name, 
             .menu-items ul.nav-links li a i,
@@ -28,7 +33,6 @@ body {
             .menu-items .logout-mod li a i,
             .menu-items .logout-mod li a > span {
                 color: $dark-mode-text-color;
-
             }
         }
         .switch::before {
