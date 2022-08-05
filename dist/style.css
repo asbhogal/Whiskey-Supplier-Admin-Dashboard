@@ -77,13 +77,14 @@ nav {
   width: 250px;
   background-color: whitesmoke;
   border-right: 1px solid #e6e5e5;
+  transition: all 0.5s ease-in;
+}
+nav .close {
+  width: 73px;
 }
 nav .nav-links li:hover {
   background-color: #3a3b3c;
   border-radius: 5px;
-}
-nav .close {
-  width: 73px;
 }
 nav .log-out-btn {
   margin-right: 30px;
