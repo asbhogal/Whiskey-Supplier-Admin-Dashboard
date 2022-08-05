@@ -33,8 +33,12 @@ nav {
     background-color: $light-mode-panel-color;
     border-right: 1px solid $light-mode-border-color;
     transition: $transition-05;
-    .close {
-        width: 73px;
+    &.close {
+        width: 73px !important;
+        .logo-name span {
+            display: none;
+            transition: $transition-03;
+        }
     }
     .nav-links li:hover {
         background-color: $dark-mode-primary-color;

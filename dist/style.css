@@ -79,8 +79,12 @@ nav {
   border-right: 1px solid #e6e5e5;
   transition: all 0.5s ease-in;
 }
-nav .close {
-  width: 73px;
+nav.close {
+  width: 73px !important;
+}
+nav.close .logo-name span {
+  display: none;
+  transition: all 0.3s ease-in;
 }
 nav .nav-links li:hover {
   background-color: #3a3b3c;
