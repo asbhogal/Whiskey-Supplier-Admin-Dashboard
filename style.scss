@@ -36,8 +36,12 @@ nav {
     &.close {
         width: 73px !important;
         .logo-name span {
-            display: none;
-            transition: $transition-03;
+            opacity: 0;
+        }
+        li a .link-name {
+            opacity: 0;
+            pointer-events: none;
+            position: fixed;
         }
     }
     .nav-links li:hover {

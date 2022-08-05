@@ -83,8 +83,12 @@ nav.close {
   width: 73px !important;
 }
 nav.close .logo-name span {
-  display: none;
-  transition: all 0.3s ease-in;
+  opacity: 0;
+}
+nav.close li a .link-name {
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
 }
 nav .nav-links li:hover {
   background-color: #3a3b3c;
