@@ -1,4 +1,4 @@
-const body = document.querySelector("body"),
+const body = document.querySelector("body");
     modeToggle = body.querySelector(".mode-toggle");
     sidebar = body.querySelector("nav");
     sidebarToggle = body.querySelector(".sidebar-toggle");
@@ -9,4 +9,4 @@ modeToggle.addEventListener("click", () => {
 
 sidebarToggle.addEventListener("click", () => {
     sidebar.classList.toggle("close");
-})
+});
