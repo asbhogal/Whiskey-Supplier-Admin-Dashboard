@@ -41,6 +41,10 @@ nav {
         .logo-name .logo_name {
             transition: $transition-05;
         }
+        .logo_name {
+            display: none;
+            pointer-events: none;
+        }
         li a .link-name {
             opacity: 0;
             pointer-events: none;

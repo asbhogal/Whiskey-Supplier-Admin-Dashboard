@@ -88,6 +88,10 @@ nav.close .logo-name span {
 nav.close .logo-name .logo_name {
   transition: all 0.5s ease-in;
 }
+nav.close .logo_name {
+  display: none;
+  pointer-events: none;
+}
 nav.close li a .link-name {
   opacity: 0;
   pointer-events: none;
