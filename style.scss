@@ -38,6 +38,9 @@ nav {
         .logo-name span {
             opacity: 0;
         }
+        .logo-name .logo_name {
+            transition: $transition-05;
+        }
         li a .link-name {
             opacity: 0;
             pointer-events: none;
@@ -74,6 +77,10 @@ nav {
             font-weight: 200;
             font-size:20px;
         }
+        /*.logo_name {
+            opacity: 0;
+            pointer-events: none;
+        }*/
     }
     .menu-items {
         margin: 40px 15px 0 15px;

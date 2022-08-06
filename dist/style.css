@@ -85,6 +85,9 @@ nav.close {
 nav.close .logo-name span {
   opacity: 0;
 }
+nav.close .logo-name .logo_name {
+  transition: all 0.5s ease-in;
+}
 nav.close li a .link-name {
   opacity: 0;
   pointer-events: none;
@@ -114,6 +117,10 @@ nav .logo-name {
   font-size: 22px;
   font-weight: 600;
   color: black;
+  /*.logo_name {
+      opacity: 0;
+      pointer-events: none;
+  }*/
 }
 nav .logo-name span {
   padding-left: 10px;
