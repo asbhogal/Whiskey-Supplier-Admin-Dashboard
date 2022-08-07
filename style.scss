@@ -17,6 +17,7 @@
         padding: 10px 14px;
         width: calc(100% - 250px);
         background-color: $light-mode-panel-color;
+        transition: $transition-05;
         .sidebar-toggle {
             font-size: 26px;
             color: $light-mode-text-color;
@@ -36,7 +37,7 @@ nav {
     transition: $transition-05;
     &.close {
         width: 73px !important;
-        ~ .dashboard {
+        ~ .dashboard .top {
             left: 73px;
             width: calc(100% - 73px);
         }

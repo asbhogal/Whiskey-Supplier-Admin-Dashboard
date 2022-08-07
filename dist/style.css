@@ -63,6 +63,7 @@ body.dark .switch::before {
   padding: 10px 14px;
   width: calc(100% - 250px);
   background-color: whitesmoke;
+  transition: all 0.5s ease-in;
 }
 .dashboard .top .sidebar-toggle {
   font-size: 26px;
@@ -83,7 +84,7 @@ nav {
 nav.close {
   width: 73px !important;
 }
-nav.close ~ .dashboard {
+nav.close ~ .dashboard .top {
   left: 73px;
   width: calc(100% - 73px);
 }
