@@ -16,6 +16,10 @@ body {
         .dashboard {
             background-color: $dark-mode-panel-color;
         }
+        :is(input) {
+            background-color: $dark-mode-primary-color;
+            border-color: $dark-mode-border-color;
+        }
         nav {
             background-color: $dark-mode-nav-bar-color;
             border: none;

@@ -1,8 +1,5 @@
 @import 'partials/mixins', 'partials/typography', 'partials/globals', 'partials/responsive', 'partials/variables';
 
-:is(.search-box) {
-    background-color: red;
-}
 
 .dashboard {
     background-color: $light-mode-panel-color;
