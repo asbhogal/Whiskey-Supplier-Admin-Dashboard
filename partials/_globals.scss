@@ -16,8 +16,9 @@ body {
         background-color: $dark-mode-primary-color;
         nav {
             background-color: $dark-mode-secondary-color;
-            .logo-name {
+            .logo-name span {
                 font-weight: 200;
+                color: $dark-mode-text-color;
             }
             .nav-links a:hover {
                 background-color: $dark-mode-primary-color;
