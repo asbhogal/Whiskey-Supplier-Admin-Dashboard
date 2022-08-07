@@ -29,7 +29,7 @@ body.dark nav .nav-links a:hover {
   background-color: #3a3b3c;
   border-radius: 5px;
 }
-body.dark nav .log-out-btn:hover {
+body.dark nav .log-out-btn a:hover {
   border-radius: 5px;
   background-color: #3a3b3c;
 }
@@ -49,9 +49,9 @@ body.dark .switch::before {
 .dashboard {
   position: relative;
   left: 250px;
-  background-color: whitesmoke;
+  background-color: red;
   min-height: 100vh;
-  width: calc(100% - 250px);
+  width: calc(100% - 73px);
   padding: 10px 14px;
   transition: all 0.5s ease-in;
 }
@@ -63,7 +63,6 @@ body.dark .switch::before {
   left: 250px;
   padding: 10px 14px;
   width: calc(100% - 250px);
-  background-color: whitesmoke;
   transition: all 0.5s ease-in;
 }
 .dashboard .top .sidebar-toggle {

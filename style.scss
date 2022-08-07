@@ -3,9 +3,9 @@
 .dashboard {
     position: relative;
     left: 250px;
-    background-color: $light-mode-panel-color;
+    background-color: red;
     min-height: 100vh;
-    width: calc(100% - 250px);
+    width: calc(100% - 73px);
     padding: 10px 14px;
     transition: $transition-05;
     .top {
@@ -16,7 +16,6 @@
         left: 250px;
         padding: 10px 14px;
         width: calc(100% - 250px);
-        background-color: $light-mode-panel-color;
         transition: $transition-05;
         .sidebar-toggle {
             font-size: 26px;
