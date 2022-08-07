@@ -45,7 +45,7 @@ nav {
             transition: $transition-05;
         }
         .logo_name {
-            display: none;
+            opacity: 0;
             pointer-events: none;
         }
         li a .link-name {
