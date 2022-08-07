@@ -13,9 +13,11 @@ body {
     background-color: $light-mode-primary-color;
     font-family: 'Roboto Condensed', sans-serif;
     &.dark {
-        background-color: $dark-mode-primary-color;
+        .dashboard {
+            background-color: $dark-mode-panel-color;
+        }
         nav {
-            background-color: $dark-mode-secondary-color;
+            background-color: $dark-mode-nav-bar-color;
             border: none;
             .logo-name span {
                 font-weight: 200;

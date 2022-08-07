@@ -1,7 +1,7 @@
 @import 'partials/mixins', 'partials/typography', 'partials/globals', 'partials/responsive', 'partials/variables';
 
 .dashboard {
-    background-color: red;
+    background-color: $light-mode-panel-color;
     min-height: 100vh;
     transition: $transition-05;
     .top {
@@ -21,24 +21,17 @@
     }
 }
 
-nav.close .dashboard section {
-    width: calc(100% - 73px) !important;
-}
-
 nav {
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 250px;
-    background-color: $light-mode-panel-color;
+    background-color: $light-mode-nav-bar-color;
     border-right: 1px solid $light-mode-border-color;
     transition: $transition-05;
     &.close {
         width: 73px !important;
-        .dashboard {
-            width: calc(100% - 73px);
-        }
         ~ .dashboard .top {
             left: 73px;
             width: calc(100% - 73px);
