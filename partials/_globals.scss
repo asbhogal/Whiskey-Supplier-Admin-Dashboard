@@ -20,6 +20,9 @@ body {
             background-color: $dark-mode-primary-color;
             border-color: $dark-mode-border-color;
         }
+        :is(.sidebar-toggle) {
+            color: $dark-mode-title-icon-color !important;
+        }
         nav {
             background-color: $dark-mode-nav-bar-color;
             border: none;
