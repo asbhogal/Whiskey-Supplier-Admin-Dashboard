@@ -21,9 +21,10 @@
             width: 100%;
             margin: 0 30px;
             input {
-                position: inherit;
+                position: absolute;
                 border: 1px solid $light-mode-border-color;
-                height: 100px;
+                padding: 0 25px 0 10px; 
+                height: 45px;
                 width: 100%;
             }
         }
