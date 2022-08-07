@@ -5,6 +5,24 @@
     background-color: $light-mode-panel-color;
     min-height: 100vh;
     transition: $transition-05;
+    .dashboard-content {
+        padding-top: 130px;
+        position: absolute;
+        left: 285px;
+        .title {
+            display: flex;
+            align-items: center;
+            margin: 70px 0 30px 0;
+            i {
+                @include flex-central-align;
+                position: relative;
+                height: 35px;
+                width: 35px;
+                background-color: $light-mode-primary-color;
+                color: $light-mode-title-icon-color;
+            }
+        }
+    }
     .top {
         position: fixed;
         display: flex;

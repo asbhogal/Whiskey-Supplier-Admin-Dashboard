@@ -19,6 +19,7 @@ body {
         :is(input) {
             background-color: $dark-mode-primary-color;
             border-color: $dark-mode-border-color;
+            color: $dark-mode-text-color;
         }
         :is(.sidebar-toggle, .fa-magnifying-glass) {
             color: $dark-mode-title-icon-color !important;

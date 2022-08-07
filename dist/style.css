@@ -21,6 +21,7 @@ body.dark .dashboard {
 body.dark :is(input) {
   background-color: #3a3b3c;
   border-color: #4d4c4c;
+  color: #ccc;
 }
 body.dark :is(.sidebar-toggle, .fa-magnifying-glass) {
   color: #ccc !important;
@@ -58,6 +59,26 @@ body.dark .switch::before {
   background-color: #f5f5f5;
   min-height: 100vh;
   transition: all 0.5s ease-in;
+}
+.dashboard .dashboard-content {
+  padding-top: 130px;
+  position: absolute;
+  left: 285px;
+}
+.dashboard .dashboard-content .title {
+  display: flex;
+  align-items: center;
+  margin: 70px 0 30px 0;
+}
+.dashboard .dashboard-content .title i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 35px;
+  width: 35px;
+  background-color: #a9a9a9;
+  color: #f5f5f5;
 }
 .dashboard .top {
   position: fixed;
