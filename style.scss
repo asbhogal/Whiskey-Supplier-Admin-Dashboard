@@ -7,6 +7,7 @@
     min-height: 100vh;
     width: calc(100% - 250px);
     padding: 10px 14px;
+    transition: $transition-05;
     .top {
         position: fixed;
         display: flex;
@@ -35,14 +36,12 @@ nav {
     transition: $transition-05;
     &.close {
         width: 73px !important;
+        ~ .dashboard {
+            left: 73px;
+            width: calc(100% - 73px);
+        }
         .logo-name span {
             opacity: 0;
-        }
-        .logo-name .logo_name {
-            font-size: 22px;
-            font-weight: 600;
-            color: $light-mode-text-color;
-            transition: $transition-05;
         }
         .logo_name {
             opacity: 0;
@@ -52,6 +51,12 @@ nav {
             opacity: 0;
             pointer-events: none;
         }
+    }
+    .logo-name .logo_name {
+        font-size: 22px;
+        font-weight: 200;
+        color: $light-mode-text-color;
+        transition: $transition-05;
     }
     .nav-links li:hover {
         background-color: $dark-mode-primary-color;

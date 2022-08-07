@@ -52,6 +52,7 @@ body.dark .switch::before {
   min-height: 100vh;
   width: calc(100% - 250px);
   padding: 10px 14px;
+  transition: all 0.5s ease-in;
 }
 .dashboard .top {
   position: fixed;
@@ -82,14 +83,12 @@ nav {
 nav.close {
   width: 73px !important;
 }
+nav.close ~ .dashboard {
+  left: 73px;
+  width: calc(100% - 73px);
+}
 nav.close .logo-name span {
   opacity: 0;
-}
-nav.close .logo-name .logo_name {
-  font-size: 22px;
-  font-weight: 600;
-  color: black;
-  transition: all 0.5s ease-in;
 }
 nav.close .logo_name {
   opacity: 0;
@@ -98,6 +97,12 @@ nav.close .logo_name {
 nav.close li a .link-name {
   opacity: 0;
   pointer-events: none;
+}
+nav .logo-name .logo_name {
+  font-size: 22px;
+  font-weight: 200;
+  color: black;
+  transition: all 0.5s ease-in;
 }
 nav .nav-links li:hover {
   background-color: #3a3b3c;
