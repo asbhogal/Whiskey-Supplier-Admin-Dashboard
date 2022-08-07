@@ -1,5 +1,9 @@
 @import 'partials/mixins', 'partials/typography', 'partials/globals', 'partials/responsive', 'partials/variables';
 
+:is(.search-box) {
+    background-color: red;
+}
+
 .dashboard {
     background-color: $light-mode-panel-color;
     min-height: 100vh;
@@ -13,6 +17,19 @@
         padding: 10px 14px;
         width: calc(100% - 250px);
         transition: $transition-05;
+        .search-box{
+            position: relative;
+            height: 45px;
+            max-width: 600px;
+            width: 100%;
+            margin: 0 30px;
+            input {
+                position: inherit;
+                border: 1px solid $light-mode-border-color;
+                height: 100px;
+                width: 100%;
+            }
+        }
         .sidebar-toggle {
             font-size: 26px;
             color: $light-mode-text-color;
