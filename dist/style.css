@@ -20,6 +20,7 @@ body.dark {
 }
 body.dark nav {
   background-color: #242526;
+  border: none;
 }
 body.dark nav .logo-name span {
   font-weight: 200;
@@ -47,12 +48,8 @@ body.dark .switch::before {
 }
 
 .dashboard {
-  position: relative;
-  left: 250px;
   background-color: red;
   min-height: 100vh;
-  width: calc(100% - 73px);
-  padding: 10px 14px;
   transition: all 0.5s ease-in;
 }
 .dashboard .top {
@@ -71,6 +68,10 @@ body.dark .switch::before {
   cursor: pointer;
 }
 
+nav.close .dashboard section {
+  width: calc(100% - 73px) !important;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -83,6 +84,9 @@ nav {
 }
 nav.close {
   width: 73px !important;
+}
+nav.close .dashboard {
+  width: calc(100% - 73px);
 }
 nav.close ~ .dashboard .top {
   left: 73px;

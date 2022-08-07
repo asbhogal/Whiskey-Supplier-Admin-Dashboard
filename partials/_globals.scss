@@ -16,6 +16,7 @@ body {
         background-color: $dark-mode-primary-color;
         nav {
             background-color: $dark-mode-secondary-color;
+            border: none;
             .logo-name span {
                 font-weight: 200;
                 color: $dark-mode-text-color;

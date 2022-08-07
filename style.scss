@@ -1,12 +1,8 @@
 @import 'partials/mixins', 'partials/typography', 'partials/globals', 'partials/responsive', 'partials/variables';
 
 .dashboard {
-    position: relative;
-    left: 250px;
     background-color: red;
     min-height: 100vh;
-    width: calc(100% - 73px);
-    padding: 10px 14px;
     transition: $transition-05;
     .top {
         position: fixed;
@@ -25,6 +21,10 @@
     }
 }
 
+nav.close .dashboard section {
+    width: calc(100% - 73px) !important;
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -36,6 +36,9 @@ nav {
     transition: $transition-05;
     &.close {
         width: 73px !important;
+        .dashboard {
+            width: calc(100% - 73px);
+        }
         ~ .dashboard .top {
             left: 73px;
             width: calc(100% - 73px);
