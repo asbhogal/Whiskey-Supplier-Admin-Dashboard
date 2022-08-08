@@ -29,14 +29,39 @@
             }
         }
         .boxes {
-            @include flex-central-align;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             .box {
                 padding: 15px 20px;
-                background-color: $light-mode-box1-color;
-                width: calc(100% / 3 - 15px);
+                margin: 0 40px;
+                width: 100%;
                 display: inherit;
                 flex-direction: column;
                 align-items: center;
+                .box1 {
+                    background-color: $light-mode-box1-color;
+                }
+                .box2 {
+                    background-color: $light-mode-box2-color;
+                }
+                .box3 {
+                    background-color: $light-mode-box3-color;
+                }
+                i {
+                    font-size: 32px;
+                }
+                .text {
+                    white-space: nowrap;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: $light-mode-text-color;
+                }
+                .number {
+                    font-size: 28px;
+                    font-weight: 600;
+                    color: $light-mode-text-color;
+                }
             }
         }
     }

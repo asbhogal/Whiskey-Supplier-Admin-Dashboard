@@ -89,15 +89,38 @@ body.dark .switch::before {
 .dashboard .dashboard-content .boxes {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .dashboard .dashboard-content .boxes .box {
   padding: 15px 20px;
-  background-color: #4da3ff;
-  width: calc(33.3333333333% - 15px);
+  margin: 0 40px;
+  width: 100%;
   display: inherit;
   flex-direction: column;
   align-items: center;
+}
+.dashboard .dashboard-content .boxes .box .box1 {
+  background-color: #4da3ff;
+}
+.dashboard .dashboard-content .boxes .box .box2 {
+  background-color: #ffe6ac;
+}
+.dashboard .dashboard-content .boxes .box .box3 {
+  background-color: #e7d1fc;
+}
+.dashboard .dashboard-content .boxes .box i {
+  font-size: 32px;
+}
+.dashboard .dashboard-content .boxes .box .text {
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+.dashboard .dashboard-content .boxes .box .number {
+  font-size: 28px;
+  font-weight: 600;
+  color: black;
 }
 .dashboard .top {
   position: fixed;
