@@ -6,9 +6,32 @@
     min-height: 100vh;
     transition: $transition-05;
     .dashboard-content {
-        padding-top: 130px;
+        top: 130px;
         position: absolute;
-        left: 285px;
+        left: 250px;
+        padding: 10px 14px;
+        width: calc(100% - 250px);
+        .recent-orders .order-data {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            .data {
+                display: flex;
+                flex-direction: column;
+                margin: 0 15px;
+                .data-list {
+                    font-size: 18px;
+                    font-weight: 400;
+                    margin-top: 20px;
+                    white-space: nowrap;
+                }
+            }
+        }
+        .data-title {
+            font-size: 20px;
+            font-weight: 600;
+        }
         .title {
             display: flex;
             align-items: center;
