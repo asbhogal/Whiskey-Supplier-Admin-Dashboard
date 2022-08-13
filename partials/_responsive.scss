@@ -64,5 +64,8 @@
     .dashboard .top {
         left: 73px !important;
         width: calc(100% - 73px) !important;
+        .sidebar-toggle {
+            display: none;
+        }
     }
 }

@@ -156,6 +156,10 @@ nav [class~=link-name] {
     left: 73px !important;
     width: calc(100% - 73px) !important;
   }
+  .dashboard-content .sidebar-toggle,
+.dashboard .top .sidebar-toggle {
+    display: none;
+  }
 }
 .dashboard {
   background-color: #f5f5f5;
