@@ -12,7 +12,6 @@
         }
     }
     .dashboard-content {
-        top: 65px;
         position: absolute;
         left: 250px;
         padding: 10px 14px;
@@ -47,7 +46,7 @@
                 position: relative;
                 height: 35px;
                 width: 35px;
-                background-color: $light-mode-primary-color;
+                background-color: transparent;
             }
             .text {
                 font-size: 24px;
@@ -60,6 +59,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            flex-wrap: wrap;
             .box {
                 padding: 15px 70px;
                 width: calc(100% / 3 - 15px);
@@ -104,6 +104,8 @@
         padding: 10px 14px;
         width: calc(100% - 250px);
         transition: $transition-05;
+        z-index: 9999;
+        background-color: $light-mode-panel-color;
         .search-box{
             position: relative;
             height: 45px;
@@ -130,6 +132,9 @@
             font-size: 26px;
             color: $light-mode-text-color;
             cursor: pointer;
+            &:hover {
+                color: $light-mode-secondary-color;
+            }
         }
     }
 }

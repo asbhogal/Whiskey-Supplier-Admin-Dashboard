@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +9,7 @@
 
 body {
   min-height: 100vh;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #f5f5f5;
 }
 body [class~=box],
@@ -31,6 +29,9 @@ body.dark .dashboard .dashboard-content .title .text {
 }
 body.dark .dashboard .dashboard-content .title i {
   color: #ccc;
+  background-color: transparent;
+}
+body.dark .dashboard .top {
   background-color: #242526;
 }
 body.dark .dashboard-content .overview .boxes .box1 {
@@ -87,17 +88,20 @@ body.dark .switch::before {
   transition: all 0.3s ease-in;
   background-color: #242526 !important;
 }
+body.dark.top {
+  background-color: red;
+}
 
 @media (max-width: 1000px) {
   nav {
-    width: 73px !important;
+    width: 73px;
   }
   nav .logo_name {
-    opacity: 0;
+    opacity: 1;
     pointer-events: none;
   }
   nav [class~=link-name] {
-    opacity: 0;
+    opacity: 1;
     pointer-events: none;
   }
   nav .dashboard .top,
@@ -121,6 +125,22 @@ nav.close .dashboard .dashboard-content {
     left: 250px !important;
     width: calc(100% - 250px) !important;
   }
+  .recent-orders .order-data {
+    overflow-y: scroll;
+    overflow-x: scroll;
+  }
+}
+@media (max-width: 780px) {
+  .dashboard-content .boxes .box {
+    width: calc(50% - 15px);
+    margin-top: 15px;
+  }
+}
+@media (max-width: 660px) {
+  .dashboard-content .boxes .box {
+    width: 100% !important;
+    margin-top: 15px !important;
+  }
 }
 .dashboard {
   background-color: #f5f5f5;
@@ -134,7 +154,6 @@ nav.close .dashboard .dashboard-content {
   color: #663f3f;
 }
 .dashboard .dashboard-content {
-  top: 65px;
   position: absolute;
   left: 250px;
   padding: 10px 14px;
@@ -173,7 +192,7 @@ nav.close .dashboard .dashboard-content {
   position: relative;
   height: 35px;
   width: 35px;
-  background-color: #f8f8f8;
+  background-color: transparent;
 }
 .dashboard .dashboard-content .title .text {
   font-size: 24px;
@@ -185,6 +204,7 @@ nav.close .dashboard .dashboard-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .dashboard .dashboard-content .boxes .box {
   padding: 15px 70px;
@@ -228,6 +248,8 @@ nav.close .dashboard .dashboard-content {
   padding: 10px 14px;
   width: calc(100% - 250px);
   transition: all 0.5s ease-in;
+  z-index: 9999;
+  background-color: #f5f5f5;
 }
 .dashboard .top .search-box {
   position: relative;
@@ -255,6 +277,9 @@ nav.close .dashboard .dashboard-content {
   font-size: 26px;
   color: black;
   cursor: pointer;
+}
+.dashboard .top .sidebar-toggle:hover {
+  color: #663f3f;
 }
 
 nav {

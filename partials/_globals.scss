@@ -9,7 +9,7 @@
 
 body {
     min-height: 100vh;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: $light-mode-panel-color;
     [class~=box],
     input:enabled {
@@ -28,8 +28,11 @@ body {
             }
             i {
                 color: $dark-mode-black-light-color;
-                background-color: $dark-mode-secondary-color;
+                background-color: transparent;
             }
+        }
+        .dashboard .top {
+            background-color: $dark-mode-secondary-color;
         }
         .dashboard-content .overview .boxes {
             .box1 {
@@ -86,6 +89,9 @@ body {
             left: 20px !important;
             transition: $transition-03;
             background-color: $dark-mode-secondary-color !important;
+        }
+        &.top {
+            background-color: red;
         }
     }
 }
