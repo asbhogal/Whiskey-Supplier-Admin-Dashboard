@@ -10,11 +10,35 @@
 
 body {
     min-height: 100vh;
-    background-color: $light-mode-primary-color;
+    /*background-color: $light-mode-primary-color;*/
     font-family: 'Roboto Condensed', sans-serif;
     &.dark {
         .dashboard {
-            background-color: $dark-mode-panel-color;
+            background-color: $dark-mode-secondary-color;
+            .dashboard-content {
+                background-color: $dark-mode-primary-color;
+            }
+        }
+        .dashboard-content .overview .boxes {
+            .box1 {
+                background-color: $dark-mode-panel1-color;
+            }
+            .box2 {
+                background-color: $dark-mode-panel2-color;
+            }
+            .box3 {
+                background-color: $dark-mode-panel3-color;
+            }
+        }
+        .dashboard .dashboard-content .title i {
+            color: red;
+            background-color: red;
+        }
+        :is(.order-data) {
+            color: $dark-mode-text-color;
+        }
+        :is(span.text) {
+            color: $dark-mode-text-color;
         }
         :is(input) {
             background-color: $dark-mode-primary-color;
