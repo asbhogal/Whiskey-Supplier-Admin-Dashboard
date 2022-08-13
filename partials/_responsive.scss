@@ -50,3 +50,18 @@
         margin-top: 15px !important;
     }
 }
+
+@media (max-width: 500px) {
+    nav,
+    nav.close {
+        width: 73px;
+        .logo_name {
+            opacity: 0;
+            pointer-events: none;
+        }
+        [class~=link-name] {
+            opacity: 0;
+            pointer-events: none;
+        }
+    }
+}
