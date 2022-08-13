@@ -5,8 +5,14 @@
     background-color: $light-mode-panel-color;
     min-height: 100vh;
     transition: $transition-05;
+    .search-box > .fa-magnifying-glass {
+        cursor: pointer;
+        &:hover {
+            color: $light-mode-secondary-color;
+        }
+    }
     .dashboard-content {
-        top: 130px;
+        top: 65px;
         position: absolute;
         left: 250px;
         padding: 10px 14px;

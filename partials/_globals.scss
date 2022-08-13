@@ -13,11 +13,9 @@ body {
     /*background-color: $light-mode-primary-color;*/
     font-family: 'Roboto Condensed', sans-serif;
     &.dark {
-        .dashboard {
+        .dashboard,
+        .dashboard-content {
             background-color: $dark-mode-secondary-color;
-            .dashboard-content {
-                background-color: $dark-mode-primary-color;
-            }
         }
         .dashboard-content .overview .boxes {
             .box1 {
@@ -53,6 +51,9 @@ body {
         }
         :is(.sidebar-toggle, .fa-magnifying-glass) {
             color: $dark-mode-title-icon-color !important;
+            &:hover {
+                color: $dark-mode-toggle-color !important;
+            }
         }
         nav {
             background-color: $dark-mode-nav-bar-color;
