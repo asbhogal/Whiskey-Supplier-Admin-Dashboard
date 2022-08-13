@@ -38,7 +38,7 @@ body.dark .dashboard-content .overview .boxes .box1 {
   background-color: #d6d6d6;
 }
 body.dark .dashboard-content .overview .boxes .box2 {
-  background-color: #b3b3b3;
+  background-color: #9b9b9b;
 }
 body.dark .dashboard-content .overview .boxes .box3 {
   background-color: #727272;
@@ -143,19 +143,18 @@ nav.close .dashboard .dashboard-content {
   }
 }
 @media (max-width: 500px) {
-  nav,
-nav.close {
-    width: 73px;
+  nav {
+    width: 73px !important;
   }
   nav .logo_name,
-nav.close .logo_name {
-    opacity: 0;
-    pointer-events: none;
+nav [class~=link-name] {
+    opacity: 0 !important;
+    pointer-events: none !important;
   }
-  nav [class~=link-name],
-nav.close [class~=link-name] {
-    opacity: 0;
-    pointer-events: none;
+  .dashboard-content,
+.dashboard .top {
+    left: 73px !important;
+    width: calc(100% - 73px) !important;
   }
 }
 .dashboard {

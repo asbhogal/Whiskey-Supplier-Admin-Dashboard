@@ -52,16 +52,17 @@
 }
 
 @media (max-width: 500px) {
-    nav,
-    nav.close {
-        width: 73px;
-        .logo_name {
-            opacity: 0;
-            pointer-events: none;
-        }
+    nav {
+        width: 73px !important;
+        .logo_name,
         [class~=link-name] {
-            opacity: 0;
-            pointer-events: none;
+            opacity: 0 !important;
+            pointer-events: none !important;
         }
+    }
+    .dashboard-content,
+    .dashboard .top {
+        left: 73px !important;
+        width: calc(100% - 73px) !important;
     }
 }
