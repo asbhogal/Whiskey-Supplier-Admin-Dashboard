@@ -1,1 +1,1 @@
-The products mentioned in the dashboard remain the sole and entire ownership of the copright holders and are only used as reference and to provide dummy text to demonstrate data layout and formatting.
+The products mentioned in the dashboard remain the sole and entire ownership of the copright holders and are only used as reference and to provide dummy text to demonstrate data layout and formatting. Product titles and pricing were taken from a supplier site and act solely as referencing.

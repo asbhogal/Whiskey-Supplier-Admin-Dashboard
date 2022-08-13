@@ -11,6 +11,7 @@
         }
     }
     .dashboard-content {
+        height: 100vh;
         position: absolute;
         left: 250px;
         padding: 10px 14px;
@@ -168,7 +169,7 @@ nav {
         }
     }
     .logo-name .logo_name {
-        font-size: 22px;
+        font-size: 18px;
         font-weight: 200;
         color: $light-mode-text-color;
         transition: $transition-05;

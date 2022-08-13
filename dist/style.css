@@ -22,6 +22,7 @@ body.dark {
 body.dark .dashboard,
 body.dark .dashboard-content {
   background-color: #242526;
+  height: 100vh;
 }
 body.dark .dashboard .dashboard-content .title .text {
   color: #ccc;
@@ -173,6 +174,7 @@ nav [class~=link-name] {
   color: #663f3f;
 }
 .dashboard .dashboard-content {
+  height: 100vh;
   position: absolute;
   left: 250px;
   padding: 10px 14px;
@@ -332,7 +334,7 @@ nav.close li a .link-name {
   pointer-events: none;
 }
 nav .logo-name .logo_name {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 200;
   color: black;
   transition: all 0.5s ease-in;
