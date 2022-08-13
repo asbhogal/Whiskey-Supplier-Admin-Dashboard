@@ -30,9 +30,15 @@ body {
                 background-color: $dark-mode-panel3-color;
             }
         }
-        .dashboard .dashboard-content .title i {
-            color: red;
-            background-color: red;
+        .dashboard .dashboard-content .title {
+            .text {
+                color: $dark-mode-text-color;
+                font-weight: 200;
+            }
+            i {
+                color: $dark-mode-black-light-color;
+                background-color: $dark-mode-secondary-color;
+            }
         }
         :is(.order-data) {
             color: $dark-mode-text-color;
