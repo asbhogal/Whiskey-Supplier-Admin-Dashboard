@@ -1,0 +1,34 @@
+@media (max-width: 1000px) {
+    nav {
+        width: 73px !important;
+        .logo_name {
+            opacity: 0;
+            pointer-events: none;
+        }
+        [class~=link-name] {
+            opacity: 0;
+            pointer-events: none;
+        }
+        .dashboard .top,
+        .dashboard .dashboard-content {
+            left: 73px !important;
+            width: calc(100% - 73px) !important;
+        }
+        &.close {
+            width: 250px;
+            .logo_name {
+                opacity: 1;
+                pointer-events: auto;
+            }
+            [class~=link-name] {
+                opacity: 1;
+                pointer-events: auto;
+            }
+            .dashboard .top,
+            .dashboard .dashboard-content {
+                left: 250px !important;
+                width: calc(100% - 250px) !important;
+            }  
+        }
+    }
+}

@@ -12,10 +12,14 @@
 body {
   min-height: 100vh;
   font-family: "Roboto Condensed", sans-serif;
+  background-color: #f5f5f5;
 }
 body [class~=box],
 body input:enabled {
   border-radius: 5px;
+}
+body.dark {
+  background-color: #242526;
 }
 body.dark .dashboard,
 body.dark .dashboard-content {
@@ -84,6 +88,40 @@ body.dark .switch::before {
   background-color: #242526 !important;
 }
 
+@media (max-width: 1000px) {
+  nav {
+    width: 73px !important;
+  }
+  nav .logo_name {
+    opacity: 0;
+    pointer-events: none;
+  }
+  nav [class~=link-name] {
+    opacity: 0;
+    pointer-events: none;
+  }
+  nav .dashboard .top,
+nav .dashboard .dashboard-content {
+    left: 73px !important;
+    width: calc(100% - 73px) !important;
+  }
+  nav.close {
+    width: 250px;
+  }
+  nav.close .logo_name {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  nav.close [class~=link-name] {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  nav.close .dashboard .top,
+nav.close .dashboard .dashboard-content {
+    left: 250px !important;
+    width: calc(100% - 250px) !important;
+  }
+}
 .dashboard {
   background-color: #f5f5f5;
   min-height: 100vh;
@@ -227,14 +265,16 @@ nav {
   width: 250px;
   background-color: #f8f8f8;
   border-right: 1px solid #e6e5e5;
-  transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in !important;
 }
 nav.close {
   width: 73px !important;
 }
-nav.close ~ .dashboard .top {
+nav.close ~ .dashboard .top,
+nav.close ~ .dashboard .dashboard-content {
   left: 73px;
   width: calc(100% - 73px);
+  transition: all 0.5s ease-in !important;
 }
 nav.close .logo-name span {
   opacity: 0;
@@ -292,28 +332,28 @@ nav .menu-items {
 }
 nav .menu-items li {
   list-style-type: none;
-  transition: all 0.3s ease-in;
+  transition: all 0.5s ease-in;
 }
 nav .menu-items li a {
   display: flex;
   align-items: center;
   height: 50px;
   text-decoration: none;
-  transition: all 0.3s ease-in;
+  transition: all 0.5s ease-in;
 }
 nav .menu-items li a:hover i, nav .menu-items li a:hover .link-name {
   color: #ddd;
-  transition: all 0.3s ease-in;
+  transition: all 0.5s ease-in;
 }
 nav .menu-items li a .link-name {
   color: #222;
-  transition: all 0.3s ease-in;
+  transition: all 0.5s ease-in;
 }
 nav .menu-items li a i {
   min-width: 45px;
   height: 100%;
   color: #222;
-  transition: all 0.3s ease-in;
+  transition: all 0.5s ease-in;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -351,7 +391,7 @@ nav .menu-items .mode-toggle .switch:before {
   width: 15px;
   background-color: #f5f5f5;
   border-radius: 50%;
-  transition: all 0.3s ease-in;
+  transition: all 0.5s ease-in;
 }
 nav .menu-items ul.logout-mod {
   position: absolute;

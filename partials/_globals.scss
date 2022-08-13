@@ -10,11 +10,13 @@
 body {
     min-height: 100vh;
     font-family: 'Roboto Condensed', sans-serif;
+    background-color: $light-mode-panel-color;
     [class~=box],
     input:enabled {
         border-radius: 5px;
     }
     &.dark {
+        background-color: $dark-mode-secondary-color;
         .dashboard,
         .dashboard-content {
             background-color: $dark-mode-secondary-color;
