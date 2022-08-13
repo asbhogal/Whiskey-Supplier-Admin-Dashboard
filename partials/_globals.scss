@@ -5,17 +5,29 @@
     padding: 0;
     box-sizing: border-box;
     transition: $transition-03;
-    border-radius: 5px;
 }
 
 body {
     min-height: 100vh;
-    /*background-color: $light-mode-primary-color;*/
     font-family: 'Roboto Condensed', sans-serif;
+    [class~=box],
+    input:enabled {
+        border-radius: 5px;
+    }
     &.dark {
         .dashboard,
         .dashboard-content {
             background-color: $dark-mode-secondary-color;
+        }
+        .dashboard .dashboard-content .title {
+            .text {
+                color: $dark-mode-text-color;
+                font-weight: 200;
+            }
+            i {
+                color: $dark-mode-black-light-color;
+                background-color: $dark-mode-secondary-color;
+            }
         }
         .dashboard-content .overview .boxes {
             .box1 {
@@ -26,16 +38,6 @@ body {
             }
             .box3 {
                 background-color: $dark-mode-panel3-color;
-            }
-        }
-        .dashboard .dashboard-content .title {
-            .text {
-                color: $dark-mode-text-color;
-                font-weight: 200;
-            }
-            i {
-                color: $dark-mode-black-light-color;
-                background-color: $dark-mode-secondary-color;
             }
         }
         :is(.order-data) {
