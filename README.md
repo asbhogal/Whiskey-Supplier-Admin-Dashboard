@@ -1,10 +1,10 @@
 <h1>Whiskey Supplier Admin Dashboard</h1>
 
-An admin dashboard designed for a specialist supplier in whiskey. This has been coded using vanilla HTML5, CSS3 (SCSS) and JavaScript. The dashboard is fully responsive, with a dark/light mode which saves the user's configuration and is optimised for the web.
+An admin dashboard designed for a specialist supplier in whiskey. This has been coded using vanilla HTML5, CSS3 (SCSS) and JavaScript. The dashboard is fully responsive, with a dark/light mode which saves the user's configuration in the browser's local storage and is optimised for the web.
 
 <strong>Features:</strong><br>
   - Light and Dark Mode
-  - Saves user configuration in browser
+  - Saves user configuration in browser (using localStorage)
   - Fully responsive
   - Optimised for the web
 
