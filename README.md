@@ -1,5 +1,7 @@
 <h1>Whiskey Supplier Admin Dashboard</h1>
 
+![](https://api.checklyhq.com/v1/badges/checks/ef5d1fcd-09cf-449a-b04a-c4f0ccbf3e7d?style=for-the-badge&theme=dark)
+
 An admin dashboard designed for a specialist supplier in whiskey. This has been coded using vanilla HTML5, CSS3 (SCSS) and JavaScript. The dashboard is fully responsive, with a dark/light mode which saves the user's configuration in the browser's local storage and is optimised for the web.
 
 <strong>Features:</strong><br>
