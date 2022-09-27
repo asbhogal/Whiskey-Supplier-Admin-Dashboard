@@ -1,6 +1,7 @@
-<h1>Whiskey Supplier Admin Dashboard</h1>
-
 <div align="center">
+  
+  <h1>Whiskey Supplier Admin Dashboard</h1>
+
 
 ![](https://api.checklyhq.com/v1/badges/checks/ef5d1fcd-09cf-449a-b04a-c4f0ccbf3e7d?style=for-the-badge&theme=dark) ![](https://api.checklyhq.com/v1/badges/checks/ef5d1fcd-09cf-449a-b04a-c4f0ccbf3e7d?style=for-the-badge&theme=dark&responseTime=true) <br><br> ![GitHub deployments](https://img.shields.io/github/deployments/asbhogal/Whiskey-Supplier-Admin-Dashboard/production?label=DEPLOYMENT%20STATE&style=for-the-badge&labelColor=000) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/asbhogal/Whiskey-Supplier-Admin-Dashboard?style=for-the-badge&labelColor=000) ![GitHub repo size](https://img.shields.io/github/repo-size/asbhogal/Whiskey-Supplier-Admin-Dashboard?color=blueviolet&style=for-the-badge&labelColor=000)
 
