@@ -172,6 +172,9 @@ nav [class~=link-name] {
   background-color: #f5f5f5;
   min-height: 100vh;
   transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
 }
 .dashboard .search-box > .fa-magnifying-glass {
   cursor: pointer;
@@ -275,6 +278,9 @@ nav [class~=link-name] {
   padding: 10px 14px;
   width: calc(100% - 250px);
   transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
   z-index: 9999;
   background-color: #f5f5f5;
 }
@@ -318,6 +324,9 @@ nav {
   background-color: #f8f8f8;
   border-right: 1px solid #e6e5e5;
   transition: all 0.5s ease-in !important;
+  -webkit-transition: all 0.5s ease-in !important;
+  -moz-transition: all 0.5s ease-in !important;
+  -o-transition: all 0.5s ease-in !important;
 }
 nav.close {
   width: 73px !important;
@@ -327,6 +336,9 @@ nav.close ~ .dashboard .dashboard-content {
   left: 73px;
   width: calc(100% - 73px);
   transition: all 0.5s ease-in !important;
+  -webkit-transition: all 0.5s ease-in !important;
+  -moz-transition: all 0.5s ease-in !important;
+  -o-transition: all 0.5s ease-in !important;
 }
 nav.close .logo-name span {
   opacity: 0;
@@ -344,6 +356,9 @@ nav .logo-name .logo_name {
   font-weight: 200;
   color: black;
   transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
 }
 nav .nav-links li:hover {
   background-color: #3a3b3c;
@@ -385,6 +400,9 @@ nav .menu-items {
 nav .menu-items li {
   list-style-type: none;
   transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
 }
 nav .menu-items li a {
   display: flex;
@@ -392,20 +410,32 @@ nav .menu-items li a {
   height: 50px;
   text-decoration: none;
   transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
 }
 nav .menu-items li a:hover i, nav .menu-items li a:hover .link-name {
   color: #ddd;
   transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
 }
 nav .menu-items li a .link-name {
   color: #222;
   transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
 }
 nav .menu-items li a i {
   min-width: 45px;
   height: 100%;
   color: #222;
   transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -444,6 +474,9 @@ nav .menu-items .mode-toggle .switch:before {
   background-color: #f5f5f5;
   border-radius: 50%;
   transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
 }
 nav .menu-items ul.logout-mod {
   position: absolute;

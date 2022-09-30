@@ -4,6 +4,9 @@
     background-color: $light-mode-panel-color;
     min-height: 100vh;
     transition: $transition-05;
+    -webkit-transition: $transition-05;
+    -moz-transition: $transition-05;
+    -o-transition: $transition-05;
     .search-box > .fa-magnifying-glass {
         cursor: pointer;
         &:hover {
@@ -104,6 +107,9 @@
         padding: 10px 14px;
         width: calc(100% - 250px);
         transition: $transition-05;
+        -webkit-transition: $transition-05;
+        -moz-transition: $transition-05;
+        -o-transition: $transition-05;
         z-index: 9999;
         background-color: $light-mode-panel-color;
         .search-box{
@@ -148,6 +154,9 @@ nav {
     background-color: $light-mode-nav-bar-color;
     border-right: 1px solid $light-mode-border-color;
     transition: $transition-05 !important;
+    -webkit-transition: $transition-05 !important;
+    -moz-transition: $transition-05 !important;
+    -o-transition: $transition-05 !important;
     &.close {
         width: 73px !important;
         ~ .dashboard .top,
@@ -155,6 +164,9 @@ nav {
             left: 73px;
             width: calc(100% - 73px);
             transition: $transition-05 !important;
+            -webkit-transition: $transition-05 !important;
+            -moz-transition: $transition-05 !important;
+            -o-transition: $transition-05 !important;
         }
         .logo-name span {
             opacity: 0;
@@ -173,6 +185,9 @@ nav {
         font-weight: 200;
         color: $light-mode-text-color;
         transition: $transition-05;
+        -webkit-transition: $transition-05;
+        -moz-transition: $transition-05;
+        -o-transition: $transition-05;
     }
     .nav-links li:hover {
         background-color: $dark-mode-primary-color;
@@ -213,26 +228,41 @@ nav {
         li {
             list-style-type: none;
             transition: $transition-05;
+            -webkit-transition: $transition-05;
+            -moz-transition: $transition-05;
+            -o-transition: $transition-05;
             a {
                 display: flex;
                 align-items: center;
                 height: 50px;
                 text-decoration: none;
                 transition: $transition-05;
+                -webkit-transition: $transition-05;
+                -moz-transition: $transition-05;
+                -o-transition: $transition-05;
                 &:hover i,
                 &:hover .link-name {
                     color: $light-mode-toggle-color;
                     transition: $transition-05;
+                    -webkit-transition: $transition-05;
+                    -moz-transition: $transition-05;
+                    -o-transition: $transition-05;
                 }
                 .link-name {
                     color: $light-mode-black-light-color;
                     transition: $transition-05;
+                    -webkit-transition: $transition-05;
+                    -moz-transition: $transition-05;
+                    -o-transition: $transition-05;
                 }
                 i {
                     min-width: 45px;
                     height: 100%;
                     color: $light-mode-black-light-color;
                     transition: $transition-05;
+                    -webkit-transition: $transition-05;
+                    -moz-transition: $transition-05;
+                    -o-transition: $transition-05;
                     @include flex-central-align;
                 }
             }
@@ -267,6 +297,9 @@ nav {
                     background-color: $light-mode-panel-color;
                     border-radius: 50%;
                     transition: $transition-05;
+                    -webkit-transition: $transition-05;
+                    -moz-transition: $transition-05;
+                    -o-transition: $transition-05;
                 }
             }
         }
