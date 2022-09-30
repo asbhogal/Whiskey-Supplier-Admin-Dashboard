@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
   transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
 }
 
 body {
@@ -87,6 +90,9 @@ body.dark nav .menu-items .logout-mod li a > span {
 body.dark .switch::before {
   left: 20px !important;
   transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
   background-color: #242526 !important;
 }
 body.dark.top {

@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
     transition: $transition-03;
+    -webkit-transition: $transition-03;
+    -moz-transition: $transition-03;
+    -o-transition: $transition-03;
 }
 
 body {
@@ -89,6 +92,9 @@ body {
         .switch::before {
             left: 20px !important;
             transition: $transition-03;
+            -webkit-transition: $transition-03;
+            -moz-transition: $transition-03;
+            -o-transition: $transition-03;
             background-color: $dark-mode-secondary-color !important;
         }
         &.top {
