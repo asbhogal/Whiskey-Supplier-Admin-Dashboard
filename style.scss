@@ -123,7 +123,11 @@
                 left: 10px;
                 font-size: 18px;
                 top: 50%;
-                transform: translateY(-50%);
+                transform:          translateY(-50%);
+                -webkit-transform:  translateY(-50%);
+                -moz-transform: 	translateY(-50%);
+                -ms-transform: 		translateY(-50%);
+                -o-transform:       translateY(-50%);
                 z-index: 99;
             }
             input {
@@ -291,15 +295,19 @@ nav {
                     position: absolute;
                     left: 5px;
                     top: 50%;
-                    transform: translateY(-50%);
+                    transform:          translateY(-50%);
+                    -webkit-transform:  translateY(-50%);
+                    -moz-transform: 	translateY(-50%);
+                    -ms-transform: 		translateY(-50%);
+                    -o-transform:       translateY(-50%);
                     height: 15px;
                     width: 15px;
                     background-color: $light-mode-panel-color;
                     border-radius: 50%;
-                    transition: $transition-05;
+                    transition:         $transition-05;
                     -webkit-transition: $transition-05;
-                    -moz-transition: $transition-05;
-                    -o-transition: $transition-05;
+                    -moz-transition:    $transition-05;
+                    -o-transition:      $transition-05;
                 }
             }
         }

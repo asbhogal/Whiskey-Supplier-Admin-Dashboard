@@ -297,6 +297,10 @@ nav [class~=link-name] {
   font-size: 18px;
   top: 50%;
   transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
   z-index: 99;
 }
 .dashboard .top .search-box input {
@@ -469,6 +473,10 @@ nav .menu-items .mode-toggle .switch:before {
   left: 5px;
   top: 50%;
   transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
   height: 15px;
   width: 15px;
   background-color: #f5f5f5;
