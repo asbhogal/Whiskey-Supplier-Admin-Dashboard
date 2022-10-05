@@ -12,3 +12,10 @@
     -moz-transition:    $transition-03;
     -o-transition:      $transition-03;
 }
+
+@mixin cross-browser-transition-set-long {
+    transition:                 $transition-05;
+    -webkit-transition:         $transition-05;
+    -moz-transition:            $transition-05;
+    -o-transition:              $transition-05;
+}
