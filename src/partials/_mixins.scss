@@ -7,10 +7,10 @@
 }
 
 @mixin cross-browser-transition-set-short {
-    transition:         $transition-03;
-    -webkit-transition: $transition-03;
-    -moz-transition:    $transition-03;
-    -o-transition:      $transition-03;
+    transition:                 $transition-03;
+    -webkit-transition:         $transition-03;
+    -moz-transition:            $transition-03;
+    -o-transition:              $transition-03;
 }
 
 @mixin cross-browser-transition-set-long {

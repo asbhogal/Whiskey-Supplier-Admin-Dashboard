@@ -96,7 +96,7 @@ body.dark .switch::before {
   background-color: #242526 !important;
 }
 body.dark.top {
-  background-color: red;
+  background-color: #ff0000;
 }
 
 @media (max-width: 1000px) {
