@@ -1,4 +1,8 @@
-@import 'src/partials/mixins', 'src/partials/typography', 'src/partials/globals', 'src/partials/responsive', 'src/partials/variables';
+@import 'src/partials/globals', 
+        'src/partials/mixins', 
+        'src/partials/typography', 
+        'src/partials/responsive', 
+        'src/partials/variables';
 
 .dashboard {
     background-color: $light-mode-panel-color;
