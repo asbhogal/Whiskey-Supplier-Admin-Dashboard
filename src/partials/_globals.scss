@@ -1,13 +1,12 @@
-@import 'typography', 'variables';
+@import 'mixins', 
+        'typography',
+        'variables';
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: $transition-03;
-    -webkit-transition: $transition-03;
-    -moz-transition: $transition-03;
-    -o-transition: $transition-03;
+    @include cross-browser-transition-set-short;
 }
 
 body {
@@ -91,10 +90,7 @@ body {
         }
         .switch::before {
             left: 20px !important;
-            transition: $transition-03;
-            -webkit-transition: $transition-03;
-            -moz-transition: $transition-03;
-            -o-transition: $transition-03;
+            @include cross-browser-transition-set-short;
             background-color: $dark-mode-secondary-color !important;
         }
         &.top {
