@@ -20,7 +20,7 @@
     -o-transition:              $transition-05;
 }
 
-@mixin cross-browser-transform-y-set {
+@mixin cross-browser-translate-y-set {
     transform:                  translateY(-50%);
     -webkit-transform:          translateY(-50%);
     -moz-transform: 	        translateY(-50%);

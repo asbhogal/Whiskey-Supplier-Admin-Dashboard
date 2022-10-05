@@ -121,7 +121,7 @@
                 left: 10px;
                 font-size: 18px;
                 top: 50%;
-                @include cross-browser-transform-y-set;
+                @include cross-browser-translate-y-set;
                 z-index: 99;
             }
             input {
@@ -271,7 +271,7 @@ nav {
                     background-color: $light-mode-panel-color;
                     border-radius: 50%;
                     @include cross-browser-transition-set-long;
-                    @include cross-browser-transform-y-set;
+                    @include cross-browser-translate-y-set;
                 }
             }
         }
