@@ -4,7 +4,8 @@
   "description": "<div align=\"center\">",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,11 @@
   },
   "homepage": "https://github.com/asbhogal/Whiskey-Supplier-Admin-Dashboard#readme",
   "devDependencies": {
-    "sass": "^1.55.0"
+    "parcel-bundler": "^1.3.1",
+    "sass": "^1.55.0",
+    "terser": "^5.15.1"
+  },
+  "resolutions": {
+    "node-forge": "0.10.0"
   }
 }
