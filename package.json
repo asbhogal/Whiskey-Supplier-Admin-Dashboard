@@ -1,0 +1,29 @@
+{
+  "name": "whiskey-supplier-admin-dashboard",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asbhogal/Whiskey-Supplier-Admin-Dashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asbhogal/Whiskey-Supplier-Admin-Dashboard/issues"
+  },
+  "homepage": "https://github.com/asbhogal/Whiskey-Supplier-Admin-Dashboard#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.3.1",
+    "sass": "^1.55.0",
+    "terser": "^5.15.1"
+  },
+  "resolutions": {
+    "node-forge": "0.10.0"
+  }
+}

@@ -1,6 +1,6 @@
 @media (max-width: 1000px) {
     nav {
-        width: 73px;
+        width: 4.5625rem;
         .logo_name {
             opacity: 1;
             pointer-events: none;
@@ -11,11 +11,11 @@
         }
         .dashboard .top,
         .dashboard .dashboard-content {
-            left: 73px !important;
-            width: calc(100% - 73px) !important;
+            left: 4.5625rem !important;
+            width: calc(100% - 4.5625rem) !important;
         }
         &.close {
-            width: 250px;
+            width: 15.625rem;
             .logo_name {
                 opacity: 1;
                 pointer-events: auto;
@@ -26,8 +26,8 @@
             }
             .dashboard .top,
             .dashboard .dashboard-content {
-                left: 250px !important;
-                width: calc(100% - 250px) !important;
+                left: 15.625rem !important;
+                width: calc(100% - 15.625rem) !important;
             }  
         }
     }
@@ -39,21 +39,21 @@
 
 @media (max-width: 780px) {
     .dashboard-content .boxes .box {
-        width: calc(100% / 2 - 15px);
-        margin-top: 15px;
+        width: calc(100% / 2 - .9375rem);
+        margin-top: .9375rem;
     }
 }
 
 @media (max-width: 660px) {
     .dashboard-content .boxes .box {
         width: 100% !important;
-        margin-top: 15px !important;
+        margin-top: .9375rem !important;
     }
 }
 
 @media (max-width: 500px) {
     nav {
-        width: 73px !important;
+        width: 4.5625rem !important;
         .logo_name,
         [class~=link-name] {
             opacity: 0 !important;
@@ -62,8 +62,8 @@
     }
     .dashboard-content,
     .dashboard .top {
-        left: 73px !important;
-        width: calc(100% - 73px) !important;
+        left: 4.5625rem !important;
+        width: calc(100% - 4.5625rem) !important;
         .sidebar-toggle {
             display: none;
         }
