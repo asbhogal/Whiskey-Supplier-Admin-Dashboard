@@ -151,14 +151,20 @@ nav {
     width: 15.625rem;
     background-color: $light-mode-nav-bar-color;
     border-right: .0625rem solid $light-mode-border-color;
-    @include cross-browser-transition-set-long ($transition-05 !important);
+    transition:                 $transition-05 !important;
+    -webkit-transition:         $transition-05 !important;
+    -moz-transition:            $transition-05 !important;
+    -o-transition:              $transition-05 !important;
     &.close {
         width: 4.5625rem !important;
         ~ .dashboard .top,
         ~ .dashboard .dashboard-content {
             left: 4.5625rem;
             width: calc(100% - 4.5625rem);
-            @include cross-browser-transition-set-long ($transition-05 !important);
+            transition:                 $transition-05 !important;
+            -webkit-transition:         $transition-05 !important;
+            -moz-transition:            $transition-05 !important;
+            -o-transition:              $transition-05 !important;
         }
         .logo-name span {
             opacity: 0;
