@@ -1,6 +1,6 @@
-@import 'mixins', 
-        'typography',
-        'variables';
+@use 'mixins' as *;
+@use 'typography' as *;
+@use 'variables' as *;
 
 * {
     margin: 0;
@@ -15,7 +15,7 @@ body {
     background-color: $light-mode-panel-color;
     [class~=box],
     input:enabled {
-        border-radius: 5px;
+        border-radius: .3125rem;
     }
     &.dark {
         background-color: $dark-mode-secondary-color;
@@ -74,10 +74,10 @@ body {
             }
             .nav-links a:hover {
                 background-color: $dark-mode-primary-color;
-                border-radius: 5px;
+                border-radius: .3125rem;
             }
             .log-out-btn a:hover {
-                border-radius: 5px;
+                border-radius: .3125rem;
                 background-color: $dark-mode-primary-color;
             }
             .logo-name, 
@@ -89,7 +89,7 @@ body {
             }
         }
         .switch::before {
-            left: 20px !important;
+            left: 1.25rem !important;
             @include cross-browser-transition-set-short;
             background-color: $dark-mode-secondary-color !important;
         }

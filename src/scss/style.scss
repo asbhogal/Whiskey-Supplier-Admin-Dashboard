@@ -1,8 +1,8 @@
-@import 'src/partials/globals', 
-        'src/partials/mixins', 
-        'src/partials/typography', 
-        'src/partials/responsive', 
-        'src/partials/variables';
+@use 'partials/globals' as *;
+@use 'partials/mixins' as *; 
+@use 'partials/typography' as *; 
+@use 'partials/responsive' as *;
+@use 'partials/variables' as *;
 
 .dashboard {
     background-color: $light-mode-panel-color;
@@ -17,9 +17,9 @@
     .dashboard-content {
         height: 100vh;
         position: absolute;
-        left: 250px;
-        padding: 10px 14px;
-        width: calc(100% - 250px);
+        left: 15.625rem;
+        padding: .625rem .875rem;
+        width: calc(100% - 15.625rem);
         .recent-orders .order-data {
             display: flex;
             justify-content: space-between;
@@ -28,35 +28,35 @@
             .data {
                 display: flex;
                 flex-direction: column;
-                margin: 0 15px;
+                margin: 0 .9375rem;
                 .data-list {
-                    font-size: 18px;
+                    font-size: 1.125rem;
                     font-weight: 400;
-                    margin-top: 20px;
+                    margin-top: 1.25rem;
                     white-space: nowrap;
                 }
             }
         }
         .data-title {
-            font-size: 20px;
+            font-size: 1.25rem;
             font-weight: 600;
         }
         .title {
             display: flex;
             align-items: center;
-            margin: 70px 0 30px 0;
+            margin: 4.375rem 0 1.875rem 0;
             i {
                 @include flex-central-align;
                 position: relative;
-                height: 35px;
-                width: 35px;
+                height: 2.1875rem;
+                width: 2.1875rem;
                 background-color: transparent;
             }
             .text {
-                font-size: 24px;
+                font-size: 1.5rem;
                 font-weight: 600;
                 color: $light-mode-text-color;
-                margin-left: 10px;
+                margin-left: .625rem;
             }
         }
         .boxes {
@@ -65,8 +65,8 @@
             justify-content: space-between;
             flex-wrap: wrap;
             .box {
-                padding: 15px 70px;
-                width: calc(100% / 3 - 15px);
+                padding: .9375rem 4.375rem;
+                width: calc(100% / 3 - .9375rem);
                 display: inherit;
                 flex-direction: column;
                 align-items: center;
@@ -80,18 +80,18 @@
                     background-color: $light-mode-box3-color;
                 }
                 i {
-                    font-size: 32px;
-                    padding-bottom: 5px;
+                    font-size: 2rem;
+                    padding-bottom: .3125rem;
                 }
                 .text {
                     white-space: nowrap;
-                    font-size: 18px;
+                    font-size: 1.125rem;
                     font-weight: 600;
                     color: $light-mode-text-color;
-                    padding: 5px 0;
+                    padding: .3125rem 0;
                 }
                 .number {
-                    font-size: 28px;
+                    font-size: 1.75rem;
                     font-weight: 600;
                     color: $light-mode-text-color;
                 }
@@ -104,36 +104,36 @@
         justify-content: space-between;
         align-items: center;
         top: 0;
-        left: 250px;
-        padding: 10px 14px;
-        width: calc(100% - 250px);
+        left: 15.625rem;
+        padding: .625rem .875rem;
+        width: calc(100% - 15.625rem);
         @include cross-browser-transition-set-long;
         z-index: 9999;
         background-color: $light-mode-panel-color;
         .search-box{
             position: relative;
-            height: 45px;
-            max-width: 600px;
+            height: 2.8125rem;
+            max-width: 37.5rem;
             width: 100%;
-            margin: 0 30px;
+            margin: 0 1.875rem;
             i {
                 position: absolute;
-                left: 10px;
-                font-size: 18px;
+                left: .625rem;
+                font-size: 1.125rem;
                 top: 50%;
                 @include cross-browser-translate-y-set;
                 z-index: 99;
             }
             input {
                 position: absolute;
-                border: 1px solid $light-mode-border-color;
-                padding: 0 25px 0 40px; 
-                height: 45px;
+                border: .0625rem solid $light-mode-border-color;
+                padding: 0 1.5625rem 0 2.5rem; 
+                height: 2.8125rem;
                 width: 100%;
             }
         }
         .sidebar-toggle {
-            font-size: 26px;
+            font-size: 1.625rem;
             color: $light-mode-text-color;
             cursor: pointer;
             &:hover {
@@ -148,17 +148,23 @@ nav {
     top: 0;
     left: 0;
     height: 100%;
-    width: 250px;
+    width: 15.625rem;
     background-color: $light-mode-nav-bar-color;
-    border-right: 1px solid $light-mode-border-color;
-    @include cross-browser-transition-set-long ($transition-05 !important);
+    border-right: .0625rem solid $light-mode-border-color;
+    transition:                 $transition-05 !important;
+    -webkit-transition:         $transition-05 !important;
+    -moz-transition:            $transition-05 !important;
+    -o-transition:              $transition-05 !important;
     &.close {
-        width: 73px !important;
+        width: 4.5625rem !important;
         ~ .dashboard .top,
         ~ .dashboard .dashboard-content {
-            left: 73px;
-            width: calc(100% - 73px);
-            @include cross-browser-transition-set-long ($transition-05 !important);
+            left: 4.5625rem;
+            width: calc(100% - 4.5625rem);
+            transition:                 $transition-05 !important;
+            -webkit-transition:         $transition-05 !important;
+            -moz-transition:            $transition-05 !important;
+            -o-transition:              $transition-05 !important;
         }
         .logo-name span {
             opacity: 0;
@@ -173,24 +179,24 @@ nav {
         }
     }
     .logo-name .logo_name {
-        font-size: 18px;
+        font-size: 1.125rem;
         font-weight: 200;
         color: $light-mode-text-color;
         @include cross-browser-transition-set-long;
     }
     .nav-links li:hover {
         background-color: $dark-mode-primary-color;
-        border-radius: 5px;   
+        border-radius: .3125rem;   
     }
     .log-out-btn {
-        margin-right: 30px;
+        margin-right: 1.875rem;
     }
     .logo-image {
         display: flex;
         justify-content: center;
-        min-width: 45px;
+        min-width: 2.8125rem;
         img {
-            width: 45px;
+            width: 2.8125rem;
             object-fit: cover;
         }
     }
@@ -198,19 +204,19 @@ nav {
         font-family: 'Roboto', sans-serif;
         display: flex;
         align-items: center;
-        padding: 10px 15px;
-        font-size: 22px;
+        padding: .625rem .9375rem;
+        font-size: 1.375rem;
         font-weight: 600;
         color: $light-mode-text-color;
         span {
-            padding-left: 10px;
+            padding-left: .625rem;
             text-align: center;
             font-weight: 200;
-            font-size:20px;
+            font-size:1.25rem;
         }
     }
     .menu-items {
-        margin: 40px 15px 0 15px;
+        margin: 2.5rem .9375rem 0 .9375rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -220,7 +226,7 @@ nav {
             a {
                 display: flex;
                 align-items: center;
-                height: 50px;
+                height: 3.125rem;
                 text-decoration: none;
                 @include cross-browser-transition-set-long;
 
@@ -234,7 +240,7 @@ nav {
                     @include cross-browser-transition-set-long;
                 }
                 i {
-                    min-width: 45px;
+                    min-width: 2.8125rem;
                     height: 100%;
                     color: $light-mode-black-light-color;
                     @include cross-browser-transition-set-long;
@@ -249,25 +255,25 @@ nav {
         }
         .mode-toggle {
             position: absolute;
-            right: 30px;
-            height: 50px;
-            min-width: 45px;
+            right: 1.875rem;
+            height: 3.125rem;
+            min-width: 2.8125rem;
             @include flex-central-align;
             cursor: pointer;
             .switch {
                 position: relative;
                 display: inline-block;
-                border-radius: 25px;
-                height: 22px;
-                width: 40px;
+                border-radius: 1.5625rem;
+                height: 1.375rem;
+                width: 2.5rem;
                 background-color: $light-mode-toggle-color;
                 &:before {
                     content: "";
                     position: absolute;
-                    left: 5px;
+                    left: .3125rem;
                     top: 50%;
-                    height: 15px;
-                    width: 15px;
+                    height: .9375rem;
+                    width: .9375rem;
                     background-color: $light-mode-panel-color;
                     border-radius: 50%;
                     @include cross-browser-transition-set-long;
@@ -277,7 +283,7 @@ nav {
         }
         ul.logout-mod {
             position: absolute;
-            bottom: 15px;
+            bottom: .9375rem;
             width: 100%;
         }
     }
