@@ -1,7 +1,7 @@
 {
   "name": "whiskey-supplier-admin-dashboard",
   "version": "1.0.0",
-  "description": "<div align=\"center\">",
+  "description": "An admin dashboard designed for a specialist supplier in whiskey. This has been coded using vanilla HTML5, SCSS and JavaScript. The dashboard is fully responsive, with a dark/light mode which saves the user's configuration and optimized for the web.",
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html"
