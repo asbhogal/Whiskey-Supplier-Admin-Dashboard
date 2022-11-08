@@ -13,4 +13,4 @@ node_modules
 
 ## PARCEL TEMP DIR ##
 
-.cache
+.parcel-cache
